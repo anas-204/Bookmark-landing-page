@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary mb-4">
+      <div class="container">
+        <a class="navbar-brand col-4 text-center" href="#">
+          <img src="./images/logo-bookmark.svg" alt="brand" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mx-auto justify-content-center col-8"
+          id="navbarTogglerDemo02"
+        >
+          <ul
+            class="navbar-nav d-flex col-6 text-center justify-content-evenly mx-auto"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="sec1 d-flex p-md-5 p-2 justify-content-evenly w-100 mx-auto my-3"
+    >
+      <div class="sec1-content col-md-4 col-10 mx-auto">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="sec1-buts">
+          <button class="btn me-3 px-3 py-2">Get it on Chrome</button>
+          <button class="btn px-3 p4-2">Get it on Firefox</button>
+        </div>
+      </div>
+
+      <div class="sec1-img col-md-5 col-9 mx-auto">
+        <img
+          class="w-100 mx-auto"
+          src="./images/illustration-hero.svg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="sec2 text-center px-4 my-5">
+      <h2>Features</h2>
+
+      <p class="col-md-5 mx-auto mt-3 col-10">
+        Our aim is to make it quick and easy for you to access your favourite
+        websites. Your bookmarks sync between your devices so you can access
+        them on the go.
+      </p>
+
+      <ul class="my-5 d-flex justify-content-center mx-auto px-0">
+        <li class="feature" onclick="clickfeature(this)">Simple Bookmarking</li>
+        <li class="feature" onclick="clickfeature(this)">Speedy Searching</li>
+        <li class="feature" onclick="clickfeature(this)">Easy Sharing</li>
+      </ul>
+
+      <div class="d-flex justify-content-around col-10 mx-auto cont">
+        <div class="sec2-img col-md-6 col-12">
+          <img
+            class="w-75"
+            src="./images/illustration-features-tab-1.svg"
+            alt="illustration"
+          />
+        </div>
+
+        <div class="sec2-content col-md-4 text-md-start ms-6 col-10">
+          <h3>Bookmark in one click</h3>
+          <p>
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <button class="btn px-4">More Info</button>
+        </div>
+      </div>
+
+      <div class="d-flex col-10 mx-auto d-none cont justify-content-around">
+        <div class="sec2-img col-md-6 col-12">
+          <img
+            class="w-75"
+            src="./images/illustration-features-tab-2.svg"
+            alt="illustration"
+          />
+        </div>
+
+        <div class="sec2-content col-md-4 col-10 text-md-start">
+          <h3>Intelligent search</h3>
+          <p>
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <button class="btn btn-primary">More Info</button>
+        </div>
+      </div>
+
+      <div class="d-flex col-10 mx-auto d-none cont justify-content-around">
+        <div class="sec2-img col-md-6 col-12">
+          <img
+            class="w-75"
+            src="./images/illustration-features-tab-3.svg"
+            alt="illustration"
+          />
+        </div>
+
+        <div class="sec2-content col-md-4 col-10 text-md-start">
+          <h3>Share your bookmarks</h3>
+          <p>
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+          <button class="btn btn-primary">More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3 text-center">
+      <h2>Download the extension</h2>
+      <p class="col-md-4 mx-auto col-7">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+      <div
+        class="cards d-flex mx-auto justify-content-center col-md-7 col-11 my-4"
+      >
+        <div class="chromeCard card mx-4 py-2 border-0 px-3 col-md-4">
+          <img
+            src="./images/logo-chrome.svg"
+            alt="chrome"
+            class="mx-auto my-3"
+          />
+          <h2>Add to Chrome</h2>
+          <p>Minimum version 62</p>
+          <button class="btn my-2">Add & Install Extension</button>
+        </div>
+        <div class="firefoxCard card mx-4 py-4 border-0 px-3 col-md-4">
+          <img
+            src="./images/logo-firefox.svg"
+            alt="firefox"
+            class="mx-auto my-3"
+          />
+          <h2>Add to Firefox</h2>
+          <p>Minimum version 55</p>
+          <button class="btn my-2">Add & Install Extension</button>
+        </div>
+        <div class="operaCard card mx-4 py-4 border-0 px-3 col-md-4">
+          <img src="./images/logo-opera.svg" alt="opera" class="mx-auto my-3" />
+          <h2>Add to Opera</h2>
+          <p>Minimum version 46</p>
+          <button class="btn my-2">Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec4 text-center">
+      <h2>Frequently Asked Questions</h2>
+      <p class="col-md-4 mx-auto my-4 col-10">
+        Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.
+      </p>
+      <div class="questions mt-5 col-11 mx-auto">
+        <div class="question col-md-6 mx-auto px-3">
+          <div class="q d-flex col-10 mx-auto justify-content-between">
+            <h3>What is Bookmark?</h3>
+            <div class="ms-5">
+              <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+            </div>
+          </div>
+          <p class="ans col-10 mx-auto text-start">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </p>
+        </div>
+
+        <div class="question col-md-6 mx-auto px-3">
+          <div class="q d-flex col-10 mx-auto justify-content-between">
+            <h3>How can I request a new browser?</h3>
+            <div>
+              <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+            </div>
+          </div>
+          <p class="ans col-10 mx-auto text-start">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </p>
+        </div>
+
+        <div class="question col-md-6 mx-auto px-3">
+          <div class="q d-flex col-10 mx-auto justify-content-between">
+            <h3>Is there a mobile app?</h3>
+            <div>
+              <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+            </div>
+          </div>
+          <p class="ans col-10 mx-auto text-start">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </p>
+        </div>
+
+        <div class="question col-md-6 mx-auto px-3">
+          <div class="q d-flex col-10 mx-auto justify-content-between">
+            <h3>What about other Chromium browsers?</h3>
+            <div>
+              <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+            </div>
+          </div>
+          <p class="ans col-10 mx-auto text-start">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit. More Info 35,000+ already joined Stay
+            up-to-date with what we’re doing Contact Us Features Pricing Contact
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec5 text-center py-4">
+      <p>+35,000 ALREADY JOINED</p>
+      <p>Stay up-to-date with what we're doing</p>
+      <div class="form">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="px-3"
+        />
+        <button class="btn">Contact us</button>
+      </div>
+
+      <p class="attribution mt-4">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Anas Elsheikh</a>.
+      </p>
+    </section>
+
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/file.js"></script>
+  </body>
+</html>

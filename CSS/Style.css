@@ -1,0 +1,150 @@
+body {
+  font-family: Rubik;
+}
+.navbar li {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.navbar li a {
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+.navbar li:hover > a {
+  background-color: hsl(247, 43%, 67%);
+  color: #fff;
+}
+.sec1 p,
+.sec2 p,
+.sec2-content p,
+.sec3 p,
+.sec4 p {
+  color: hsl(229, 8%, 60%);
+  font-size: 14px;
+}
+.sec1 .sec1-buts .btn:first-child,
+.sec2-content .btn,
+.sec3 .btn {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  font-size: 13px;
+  box-shadow: hsl(228, 3%, 72%) 0px 2px 6px;
+}
+.sec1-buts .btn:nth-child(2) {
+  background-color: #eee;
+  font-size: 13px;
+  box-shadow: hsl(225, 4%, 81%) 0px 2px 6px;
+}
+.sec2 ul {
+  list-style: none;
+  display: flex;
+  width: 47%;
+  margin: auto;
+  margin-block: 20px;
+}
+.sec2 li {
+  border-bottom: 2px solid #eee;
+  text-align: center;
+  width: fit-content;
+  font-size: 12px;
+  cursor: pointer;
+  color: #7b7777;
+  padding-inline: 30px;
+  padding-bottom: 10px;
+  user-select: none;
+}
+.sec2 li:first-child {
+  border-color: #70d8b9;
+}
+.sec3 .card {
+  box-shadow: #eee 1px 1px 6px 2px;
+}
+.sec3 .card h2 {
+  font-size: 20px;
+}
+.sec3 .card img {
+  width: 50px;
+}
+.sec3 .card p {
+  border-bottom: 3px dotted #eee;
+  padding-bottom: 12px;
+}
+section {
+  margin-block: 100px;
+}
+.q h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.question p {
+  border-bottom: 1px solid #bdbaba8d;
+  padding-bottom: 10px;
+}
+.question {
+  margin-bottom: 15px;
+}
+.sec5 {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  margin-bottom: 0px;
+}
+.arrow {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sec5 p:first-child {
+  font-size: 12px;
+}
+.sec5 input {
+  font-size: 12px;
+  padding: 5px 20px;
+  outline: none;
+}
+.sec5 .btn {
+  background-color: #cb4820;
+  color: #fff;
+  margin: 10px;
+}
+.attribution a {
+  color: #1c0b8a;
+}
+@media screen and (max-width: 768px) {
+  .sec1 {
+    flex-direction: column-reverse;
+  }
+  .sec1-content {
+    text-align: center;
+  }
+  .sec2 ul {
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    margin-inline: auto;
+    padding-left: 0;
+  }
+  .sec2 li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .sec2 .cont {
+    flex-direction: column;
+  }
+  .sec2-content {
+    margin-block: 30px;
+    text-align: center;
+    margin-inline: auto;
+  }
+  .sec3 .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    margin: 20px;
+  }
+  .sec4 h2 {
+    font-size: 20px;
+  }
+  .question h3 {
+    font-size: 15px;
+  }
+}
